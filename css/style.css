@@ -4,7 +4,7 @@
 }
 
 body{
-    background: #111111;
+    background: #111;
     font-family: "Poppins";
 }
 
@@ -27,7 +27,7 @@ body{
 
 .containerIMC{
     border-radius: 30px;
-    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    box-shadow: 7px 7px 13px 0px rgba(0, 0, 0, 0.22);
     width: 30%;
     height: 330px;
     margin-top: 1%;
@@ -62,6 +62,7 @@ body{
     border-radius: 70px;
     font-family: "Poppins";
     height: 40px;
+    font-weight: bold;
 }
 #resultado{
     resize:none;
