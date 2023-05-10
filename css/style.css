@@ -1,0 +1,75 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background: #111111;
+    font-family: "Poppins";
+}
+
+/** IMC **/
+
+.verde{
+    color:#4cf850;
+}
+
+.tituloIMC{
+    width: 100%;
+    text-align: center;
+}
+#titIMC{
+    color:#fff;
+}
+#subtitIMC{
+    color:#8D8D8D;
+}
+
+.containerIMC{
+    border-radius: 30px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    width: 30%;
+    height: 330px;
+    margin-top: 1%;
+    margin-left: 35%;
+    border: 1px solid #4cf850;
+    text-align: center;
+    color: #fff;
+
+}
+.containerIMC h3, input{
+    margin-top: 10px;
+} 
+.containerIMC input{
+    width:70%;
+    height: 40px;
+    font-family: "Poppins";
+    color: #8D8D8D;
+    background: none;
+    border: 1px solid #4cf850;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#btn_calcular, #resultado{
+    font-family: "Poppins";
+    font-weight: bold;
+    margin-top: 10px;
+}
+#btn_calcular{
+    background-color: #4cf850;
+    width: 40%;
+    border: 0px;
+    border-radius: 70px;
+    font-family: "Poppins";
+    height: 40px;
+}
+#resultado{
+    resize:none;
+    width: 70%;
+    color: #8D8D8D;
+    background: none;
+    border: 1px solid #4cf850;
+    border-radius: 10px;
+    height: 60px;
+}
+
