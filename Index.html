@@ -12,7 +12,7 @@
 <body>
 
     <section id="IMC">
-    
+   
         <div class="tituloIMC">
             <div id="titIMC">
                 <h2>Descubra agora o seu <span class="verde">IMC<span></h2>
@@ -24,21 +24,33 @@
                 </h4>
             </div>
         </div>
-
+        <div class="IMC1">
         <div class="containerIMC">
+            <div class="genero">
+                <div>
+                    <label>
+                        <input type="radio" name="radio" id="f" checked="">
+                        <span>Feminino</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio" id="m">
+                        <span>Masculino</span>
+                    </label> 
+                </div>
+            </div>
             <div id="input_campo">
                 <h3>Altura <span class="verde">(Metros)<span></h3>
-                <input type="number" id="altura" placeholder="  Digite sua altura em metros" onchange="this.value = this.value.replace(/,/g, '.')"/>
+                <input type="number" id="altura" placeholder="Digite sua altura em metros" onchange="this.value = this.value.replace(/,/g, '.')"/>
             </div>
             <div id="input_campo">
                 <h3>Peso <span class="verde">(Kg)<span></h3>
-                <input type="number" id="peso" placeholder="  Digite seu peso em Kg"/>
+                <input type="number" id="peso" placeholder="Digite seu peso em Kg"/>
             </div>
     
             <button id="btn_calcular">CALCULAR</button> <br>
-            <textarea readonly  id="resultado" name="resultado" placeholder="  Resultado"></textarea>
+            <textarea readonly  id="resultado" name="resultado" placeholder="Resultado"></textarea>
         </div>
-
+    </div>
     </section>
 
     <script src="script.js"></script>
