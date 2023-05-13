@@ -400,9 +400,121 @@ input[type="submit"]:hover{
 	}	
 }
 
+/**  Planos **/
+.branco2{
+    color: #fff;
+    font-size: 40px;
+}
 
+.verde2{
+    color: #4cf850;
+    font-size: 40px;
+}
 
+.cinza2{
+    color: #8d8d8d;
+    font-size: 25px;
+}
+.planomain{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cardplan1, .cardplan2, .cardplan3, .cardplan4 {
+    width: 200px;
+    height: 400px;
+    border-radius: 25px;
+    padding: 60px;
+    margin: 5px;
+    color: #fff;
+    -webkit-box-shadow: 5px 5px 37px 17px #000000a6; 
+    box-shadow: 5px 5px 37px 17px #000000a6;
+    text-align: center;
+    border-style:solid;
+    border-width: 0.3px;
+    border-color: #4cf850;
+}
 
+.branco3{
+    color: #fff;
+    font-size: 28px;
+}
+
+.verde3{
+    color: #4cf850;
+    font-size: 29px;
+}
+
+.cinza3{
+    color: #8d8d8d;
+    font-size: 18px;
+    position: sticky;
+    z-index: 2;
+}
+
+.valor6{
+    margin-top: -15px;
+    position: absolute;
+    margin-left: 1%;
+}
+
+.valor6, .branco6, .valor , .branco4{
+    color: #fff;
+    font-size: 100px;
+    height: 70px;
+}
+
+.valor6, .valor , .cinza6, .cinza4{
+    color: #8d8d8d;
+    font-size: 30px;
+}
+
+.valor{
+    margin-top: -15px;
+    position: absolute;
+    margin-left: 3%;
+}
+
+.valor2{
+    margin-top: 135px;
+    position: sticky;
+    margin-left: -5px;
+    z-index: 2;
+}
+
+.btn1{
+	padding: 10px 8px;
+	width: 270px;
+	color: #fff;
+	background: #4cf850;
+	border-radius: 30px;
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+	transition:1s;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	height: 50px;
+	margin-top: 555px;
+	margin-left: -135px;
+	border-color: #4cf850;
+    font-style: bold;
+}
+.btn1:hover{
+	background: #fff;
+}
+
+.btn1 font{
+    background: transparent;
+}
+
+.valor3{
+    margin-top: 80px;
+    position: sticky;
+    z-index: 2;
+}
 
 
 /** IMC **/
@@ -451,7 +563,7 @@ input[type="submit"]:hover{
     width:68%;
     height: 40px;
     font-family: "Poppins";
-    color: #8D8D8D;
+    color: #fff;
     background: none;
     border: 1px solid #4cf850;
     font-weight: bold;
@@ -525,14 +637,15 @@ label:first-child span {
 
 /** Caixa de resultado**/
 #resultado{
+    text-align: center;
+    margin-top: 40px;
     resize:none;
     width: 68%;
-    color: #8D8D8D;
+    color: #fff;
     background: none;
-    border: 1px solid #4cf850;
-    border-radius: 10px;
-    height: 60px;
-    padding: .15rem .5rem;
+    border: none;
+    border-bottom: 1px solid #4cf850;
+    height: 20px;
 }
 
 /**FOOTER**/

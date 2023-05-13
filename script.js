@@ -27,15 +27,33 @@ function calcIMC(){
             mensagem ="Peso acima do adequado";
         }
     }
-    resultado.textContent =`Situação: ${mensagem}`;
-    alert( `Seu IMC é: ${imc}`)
+    resultado.textContent =`${mensagem}`;
+    swal(`Seu IMC é: ${imc}`)
 
     }
     else{
-        alert('Preencha todos os campos');
+        swal('Atenção','Preencha todos os campos','error');
     }
 }
 
-
 let Calcular = document.getElementById("btn_calcular");
 Calcular.addEventListener('click', calcIMC);
+
+function cadas(){
+    let nome = document.getElementById("nome").value;
+    let email = document.getElementById("email").value ;
+    let senha = document.getElementById("senha").value ;
+
+    if(nome !=="" && email !=="" && senha !==""){
+       if(senha.length !== 5){
+            swal('Atenção','Senha deve conter 5 caracteres','error');
+        }
+        else{
+            window.location.replace("Index.html");
+        }
+    }
+    else{
+        swal('Atenção','Preencha todos os campos','error');
+    }
+}
+
