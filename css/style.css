@@ -8,7 +8,406 @@ body{
     font-family: "Poppins";
 }
 
+/*Estilizando o Scrollbar*/
+body::-webkit-scrollbar {
+    width: 13px;               /* scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #111;        /* coor da area interna */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #3e3e3e;   /* cor da barra*/
+    border-radius: 10px;       
+    border: 2px solid #4cf850;  /* cor da borda e a grossura */
+  } 
+
+  /** HOME **/
+
+  /*Estilizando o menu*/
+.menu{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    background:#111;
+   float: right;
+    float: none;
+
+}
+.menu ul{
+  font-weight: bold;
+	list-style:none;
+	position:relative;
+  font-size: 20px;
+  background-color:#111111;
+  margin-left: 20%;
+   /* margin-top: -5%;*/
+}
+.menu ul li{
+	width: 120px;
+	float:left;	
+}
+.menu a{
+  font-weight: 900;
+	padding:10px;
+	display: block;
+  position: relative;
+	text-decoration:none;
+	text-align:center;
+	background-color:#111111;
+  /*  margin-top: -70px;*/
+	color:#ffffff;
+	border-radius: 5px;
+}
+.menu ul ul{
+	position:absolute;
+	visibility:hidden;
+}
+.menu ul li:hover ul{
+	visibility:visible;
+    margin-left: -30px;
+}
+.menu a:hover{
+	color:#4cf850;
+	border-radius: 5px;
+}
+.menu ul ul li{
+	float:none;
+	border-bottom:solid 1px #111111;
+}
+.menu ul ul li a {
+	background-color:#111111;
+}
+
+label[for="bt_menu"]{
+	width:50px;
+	height:50px;
+	padding:5px;
+	background-color:#111111;
+	color:#111111;
+	text-align:center;
+	font-size:30px;
+  font-weight: bold;
+	cursor:pointer;
+	border-radius: 10px;
+}
+#bt_menu{
+	display:none;
+}
+
+label[for="bt_menu"]{
+	display:none;
+}
+
+/*Estilizando a logo escrita e suas propriedades*/
+.logo{
+    float: none;
+    margin-top: 10px;
+    font-size:25px;
+    position: relative;
+    margin-left: 100px;
+    font-weight: 900;
+    background:#111111;
+    width: 200px;
+
+}
+#will{
+    margin-top: -30px;
+}
+#power{
+    
+    margin-left: 60px;
+}
+
+/*Cor da letra*/
+.verde{
+    color:#4cf850;
+}
+/*Cor da letra*/
+.branco{
+    color:#ffffff;
+}
+
+.cabecalho{
+    position: relative;
+    height: 80px;
+    width: 750px;
+    margin-left: 500px;
+    margin-top: -70px;
+}
+
+/*Estilizando os botões*/
+input[type="submit"]{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 50px;
+    border:none;
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+    background-color: #4cf850;
+    cursor: pointer;
+}
+#btn2{
+    font-weight: 600;
+    padding: 5px;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover{
+    background-color: #ffffff;
+    color: #000;
+
+}
+
+/*EStilizando as informações da home*/
+.menu_informacoes{
+    margin-left: 40px;
+    font-size: 80px;
+    background: #2b242400;
+    font-weight: 900;
+    width:600px;
+}
+
+#textomotivacional1{
+    line-height: 75%;
+    font-weight: 900;
+    margin-top:-10px;
+}
+
+/*Cor da letra*/
+.colorverde{
+    color: #4cf850;
+    font-weight: 900;
+    font-size: 65px;
+}
+
+/*Cor da letra*/
+.cinza{
+    color: #747474;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+/*Estilizando o botão da home*/
+#btnn{
+    font-weight: 600;
+    padding: 5px;
+    height: 55px;
+    width: 260px;
+    font-size: 23px;
+    margin-left: -2px;
+}
+
+/*Propriedades do slide*/
+#slideshow1{
+    width: 100%;
+    height: 600px;
+    float: right;
+    margin-left: -100px;
+}
+
+.slider{
+    margin-left: -20px;
+}
+.slide{
+    background:#111;
+    width: 1200px;
+    float: right;
+    margin-top: -550px;
+}
+.slide img{
+    margin-right: -38px;
+}
+
+/*Criando o outro menu*/
+
+.teste{
+    width: auto;
+    height:auto ;
+    background: aqua;
+  }
+  
+  #menu {
+    z-index: 2;
+    margin-top: 34px;
+    margin-left: 30px;
+  }
+  
+  
+  /*Estilizando o segundo menu*/
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 70%;
+    background-color: #4cf850;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+    color: #4cf850;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background:rgba(17, 17, 17, 0.737); 
+    border-radius: 24%;
+    transition: 0.3s ease;
+  }
+  
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: #4cf850;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  /*espaço interno*/
+  .change-bg {
+      width: 410px;
+      height: 439px;
+      transform: translate(-60%,-30%);
+  }
+  
+  /*Slide automatico - término */
+
+#slider{
+	overflow: hidden;
+    width: 1000px;
+   /* margin-left: 50px;*/ float: right;
+	margin-top: -500px;
+	border-radius: 5px;
+	position: sticky;
+	top: 0px;
+	z-index: -1;
+}
+
+#slider figure{
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+	position: relative;
+	border-radius: 5px;
+	
+}
+
+#slider figure img{
+	float: left;
+	width: 20%;
+	border-radius: 5px;
+}
+
+@keyframes slider{
+	0%{
+	left: 0;
+	}
+
+	20%{
+	left: 0;
+	}
+
+	25%{
+	left: -100%;
+	}
+
+	45%{
+	left: -100%;
+	}
+	
+	50%{
+	left: -200%;
+	}
+
+	70%{
+	left: -200%;
+	}
+
+	75%{
+	left: -300%;
+	}
+
+	95%{
+	left: -300%;
+	}
+	
+	100%{
+	left: -400%;
+	}	
+}
+
+
+
+
+
+
 /** IMC **/
+
+/** Section **/
 .IMC1{
     align-items: center;
     display: flex;
@@ -20,10 +419,11 @@ body{
 .verde{
     color:#4cf850;
 }
-
+/** Título **/
 .tituloIMC{
     width: 100%;
     text-align: center;
+    margin-top: 10%;
 }
 #titIMC{
     color:#fff;
@@ -32,6 +432,7 @@ body{
     color:#8D8D8D;
 }
 
+/** Quadrado calculadora**/
 .containerIMC{
     border-radius: 30px;
     box-shadow: 7px 7px 13px 0px rgba(0, 0, 0, 0.22);
@@ -58,6 +459,7 @@ body{
     padding: .15rem .5rem;
 }
 
+/** Radio Btn **/
 .genero div {
     display: flex;
     flex-wrap: wrap;
@@ -75,14 +477,14 @@ body{
 }
 .genero input[type="radio"]:checked + span {
     box-shadow: 0 0 0 0.0625em #4cf850;
-    background-color: #000;
+    background-color: #111;
     z-index: 1;
     color: #4cf850;
 }
 label span {
     display: block;
     cursor: pointer;
-    background-color: #000;
+    background-color: #111;
     padding: 0.375em .75em;
     position: relative;
     margin-left: .0625em;
@@ -100,8 +502,7 @@ label:first-child span {
     border-radius: 0 .375em .375em 0;
   }
   
-
-
+/** btn Calcular**/
 #btn_calcular, #resultado{
     font-family: "Poppins";
     font-weight: bold;
@@ -117,7 +518,12 @@ label:first-child span {
     font-weight: bold;
     cursor:pointer;
 }
+#btn_calcular:hover{
+    background-color: #fff;
+    color:#000;
+}
 
+/** Caixa de resultado**/
 #resultado{
     resize:none;
     width: 68%;
@@ -129,7 +535,174 @@ label:first-child span {
     padding: .15rem .5rem;
 }
 
-#btn_calcular:hover{
-    background-color: #fff;
-    color:#000;
+/**FOOTER**/
+#rodape{
+    margin: 0;
+    padding: 0;
+    background: #111;
+    height: 500px;
+    width: 100%;
+}
+
+#textorodape{
+    position: absolute;
+    font-family: 'Poppins';
+    font-weight: bold;
+    width: 780px;
+    color: #303030;
+    word-wrap: break-word;
+    font-size: 250px;
+    margin-top: 220px;
+}
+
+#imgacademico{
+    position: relative;
+    height: 400px;
+    margin-left: 70px;
+    margin-top: 100px;
+}
+
+#rodapetexto1{
+    font-family: 'Poppins';
+    line-height: 100%;
+    text-align: right;
+color: rgb(235, 235, 235);
+
+}
+
+#rodapetexto{
+    width: 300px;
+    height: 300px;
+    font-size: 15px;
+    background: #111;
+    margin-top: -400px;
+    margin-left: 400px;
+}
+
+#rodapetexto12{
+    width: 300px;
+    height: 300px;
+    font-size: 15px;
+    background: #111;
+    margin-top: -185px;
+    margin-left: 250px;
+}
+
+  
+
+
+#pilarrodape{
+    width: 02px;
+    height: 120px;
+
+    background: #4cf850;
+    margin-top: -300px;
+    margin-left: 710px;
+}
+
+#pilarrodape2{
+    width: 02px;
+    height: 120px;
+
+    background: #4cf850;
+    margin-top: -300px;
+    margin-left: 560px;
+}
+#textorodape1{
+    font-weight: 900;
+    color: white;
+
+}
+
+
+#textorodape2{
+    color: rgb(235, 235, 235);
+    font-size: 13px;
+
+}
+.rodape_informacoes{
+    font-family: 'Poppins';
+    width: 400px;
+    height:200px;
+    background:#111;
+    margin-left: 760px;
+    margin-top: -135px;
+}
+
+
+
+/*Estilizando os botões*/
+input[type="submit"]{
+    text-align: center;
+    font-size:20px;
+
+    text-transform: uppercase;
+    font-weight: 900;
+    border:none;
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+    background-color: #4cf850;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #ffffff;
+    color: #000;
+
+}
+
+
+
+#btnn1{
+    font-size: 13px;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    border-radius: 13px;
+}
+
+.informations{
+    background: tomato;
+    float: right;
+}
+
+
+/*Estilizando a logo escrita e suas propriedades*/
+.logo3{
+    font-family: 'Poppins';
+    float: none;
+    margin-top: -430px;
+    font-size:20px;
+    position: relative;
+    margin-left: 20px;
+    font-weight: 900;
+    width: 200px;
+
+}
+#will{
+    margin-top: -30px;
+}
+#power{
+    
+    margin-left: 60px;
+}
+
+/*Cor da letra*/
+.verde{
+    color:#4cf850;
+}
+/*Cor da letra*/
+.branco{
+    color:#ffffff;
+}
+
+#textocopyright{
+    color: rgb(177, 175, 175);
+    margin-top: 10px;
+    font-size: 11px;
+
 }

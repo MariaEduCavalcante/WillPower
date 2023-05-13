@@ -11,6 +11,97 @@
 
 <body>
 
+    <section id="Home">
+        <input type="checkbox" id="bt_menu">
+	<label for="bt_menu">&#9776;</label>
+
+
+
+    <!--Criando uma nav para o menu, onde ficará todas as informações a respeito do mesmo-->
+    <nav class="menu">
+
+    <!--Logo-->
+    <div class="logo">
+    <h3><span class="verde">WILL<span> <span class="branco">POWER<span></span></h3>
+    </div>
+
+    <!--Menu-->
+    <div class="cabecalho">
+
+	<ul>
+	<li><a href=".html">HOME</a></li>
+	<li><a href=".html">EMPRESA</a>
+	<ul>
+
+    <!--Caso necessite de mais opções abrangentes-->
+	<!--<li><a href=".html">MISSÃO</a></li>
+	<li><a href=".html">VISSÃO</a></li>
+	<li><a href=".html">VALORES</a></li>
+	<li><a href=".html">HISTÓRIA</a></li>-->
+
+	</ul></li>
+	<li><a href=".html">PLANOS</a>
+    <li><a href=".html">CONTATO</a>
+    <li><input type="submit" value="MATRICULE-SE" id="btn2"></li>
+    </div></nav>
+    <br><br> <br><br>
+        
+    <!--Informações da home-->
+    <div class="menu_informacoes">
+    <!--Montagem do Texto-->
+    <p id="textomotivacional1">
+    <span class="branco">TREINANDO E<span>
+    <span class="colorverde" >ALCANÇANDO<span><br><br>
+    <span class="cinza">FAÇA PARTE DO NOSSO TIME<span></span>
+    <input id="btnn" type="submit" value="MATRICULE-SE">
+    </p></div>
+
+    <br><Br>
+    <!--Pripriedades do Manu leteral-->
+    <div class="teste">
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"> </div>
+        <div id="bar2" class="bar"> </div>
+        <div id="bar3" class="bar"> </div>
+        </div>
+        
+        <nav class="nav" id="nav"> 
+        <ul>
+        <li><a href=""> LOGIN</a></li>
+        <li><a href=""> CADASTRO</a></li>
+        <li><a href=""> SAIR</a></li>
+        </ul>
+        </nav>
+    </div>
+    
+    <div class="menu-bg" id="menu-bg"> </div>
+
+    <!--Script do menu-->
+    <script>
+        function menuOnClick() {
+        document.getElementById("menu-bar").classList.toggle("change");
+        document.getElementById("nav").classList.toggle("change");
+        document.getElementById("menu-bg").classList.toggle("change-bg");
+      }
+    </script>
+    </div>
+
+    <!--Propriedades do Slideshow-->
+    <div id="slider">
+        <figure>
+                <img src="img/slideshow2.png">
+                <img src="img/slideshow1.png">
+                <img src="img/slideshow6.png">
+                <img src="img/slideshow4.png">
+                <img src="img/slideshow3.png">
+        </figure>
+    </div>
+
+
+    
+    </section>
+    <br>
     <section id="IMC">
    
         <div class="tituloIMC">
@@ -29,11 +120,11 @@
             <div class="genero">
                 <div>
                     <label>
-                        <input type="radio" name='genero' id="genero" value="f">
+                        <input type="radio" name='genero' id="generof" value="f" checked="">
                         <span>Feminino</span>
                     </label>
                     <label>
-                        <input type="radio" name='genero' id="genero" value="m">
+                        <input type="radio" name='genero' id="generom" value="m">
                         <span>Masculino</span>
                     </label> 
                 </div>
@@ -51,6 +142,79 @@
             <textarea readonly  id="resultado" name="resultado" placeholder="Resultado"></textarea>
         </div>
     </div>
+    </section>
+
+    <section id="Footer">
+        <footer id="rodape">
+
+            <div id="rodapeimg">
+            <p id="textorodape">FITH</p>    
+            </div>
+    
+            <div id="rodapeimg1">
+    
+                <img id="imgacademico" src="img/academico.png">
+    
+            </div>
+    
+       <nav class="informations">
+        <div id="rodapetexto">
+            <p id="rodapetexto1">PROGRAMA<br>
+                PLANO<br>
+                COMUNIDADE<br>
+                TREINO<br>
+                BLOG<br>
+                CONTATO<br>
+                FAQ<br>
+                LOJA
+            </p>
+        </div>
+    
+     
+    
+        <div id="pilarrodape"></div>
+    
+        <div class="rodape_informacoes">
+    
+                <!--Montagem do Texto-->
+                <p id="textorodape1"><span class="branco">TREINANDO E ALCANÇANDO<span> </p>
+    
+    
+                <p id="textorodape2">  <span class="textorodape1">Exercícios não mudam apenas o seu corpo. Mudam 
+                    sua mente, suas atitudes e o seu humor.</span></p>
+    
+    
+                <input id="btnn1" type="submit" value="MUDE JÁ!">
+               </div>
+    
+        </div>
+    
+        <div id="rodapetexto12">
+            <p id="rodapetexto1">CONTEUDO<br>
+                PLANOS<br>
+                AULAS AO VIVO<br>
+                PÁGINA<br>
+                REDES<br>
+                MOTIVAÇÃO<br>
+                ATVDS
+                <br>
+                MERCADO
+            </p>
+        </div>
+    
+        <div id="pilarrodape2"></div>
+    
+    </nav>
+    
+    
+    <div class="logo3">
+        <h3><span class="verde">WILL<span> <span class="branco">POWER<span></span></h3>
+        </div>
+        </footer>
+    
+    
+       <center><p id="textocopyright"><span class="corcopy"> @2023 WILLPOWER<br>
+            TODOS OS DIREITOS RESERVADOS<span> </p></center> 
     </section>
 
     <script src="script.js"></script>
