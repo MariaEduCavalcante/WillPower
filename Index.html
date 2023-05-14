@@ -7,6 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="./contato.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+ 
+
     <title>WillPower - Home</title>
 </head>
 
@@ -30,7 +39,7 @@
     <div class="cabecalho">
 
 	<ul>
-	<li><a href=".html">HOME</a></li>
+	<li><a href="Index.html">HOME</a></li>
 	<li><a href=".html">EMPRESA</a>
 	<ul>
 
@@ -41,8 +50,8 @@
 	<li><a href=".html">HISTÓRIA</a></li>-->
 
 	</ul></li>
-	<li><a href=".html">PLANOS</a>
-    <li><a href=".html">CONTATO</a>
+	<li><a href="#Planos">PLANOS</a>
+    <li><a href="#contato">CONTATO</a>
     <li><input type="submit" value="MATRICULE-SE" id="btn2"></li>
     </div></nav>
     <br><br> <br><br>
@@ -69,7 +78,7 @@
         
         <nav class="nav" id="nav"> 
         <ul>
-        <li><a href=""> LOGIN</a></li>
+        <li><a href="Login.html"> LOGIN</a></li>
         <li><a href="Cadastro.html"> CADASTRO</a></li>
         <li><a href=""> SAIR</a></li>
         </ul>
@@ -98,12 +107,71 @@
                 <img src="img/slideshow3.png">
         </figure>
     </div>
-
-
-    
     </section>
     <br>
-    <secction id="Planos">
+    <section id="missao">
+        <div class="cabemissao">
+            <div id="titmissao">
+                <h1>5000+</h1>
+                <h1>CLIENTES</h1>
+            </div>
+            <div id="imgmissao">
+                <img src="img/imgmissao.jpg"/>
+            </div>
+        </div>
+        <h2>NOSSA MISSÃO</h2>
+        <div class="txtmissao">
+            <div id="pmissao">
+                <p>Ser uma empresa diferenciada que se preocupa em levar às pessoas a importância da atividade física na melhora da qualidade de vida, expondo o conceito WillPower de cuidar da saúde de forma saudável e prazerosa, por meio de excelência de atendimento e uma equipe altamente qualificada, buscando o encantamento dos clientes.</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section id="FeedBack">
+
+        <div class="main">
+            <div class="feed">
+                <div class="quadro"></div>
+                
+                <div class="back">
+                    <h2>FeedBack</h2>
+                </div>
+                
+                <div class="fundo">
+                    <h2>FEED</h2>
+                </div>
+            </div>
+    
+            <div class="swipermySwiper">
+            <div class="imgfeed">
+                <img src="img/homem.jpg"/>
+            </div>
+    
+            
+                <div class="card1">
+                    <center><p>Gostaria de expressar meu sincero elogio à Academia WillPower. Estou extremamente satisfeito com a qualidade das instalações, a variedade de programas oferecidos e a competência da equipe. A academia proporciona um ambiente acolhedor e motivador, com instrutores dedicados e profissionais. Além disso, obtive resultados significativos em meu condicionamento físico desde que me tornei membro. Recomendo a Academia ABC a todos que buscam uma experiência de fitness excepcional.</p></center>
+                        <div class="baixo">
+                            <h2>BIA CAMPINAS</h2>
+                            <h3>YOUTUBER</h3><br>
+                    
+                            <h2>@pereirabull</h2>
+                                
+                            
+                                <img src="img/instagram.png">
+
+                                <img src="img/twitter.png">
+                               
+                            
+                        </div>
+                </div>
+    
+            </div>
+        </div>
+
+    </section>
+    <br>
+    <section id="Planos">
 
         <div class="tituloIMC">
             <div id="titIMC">
@@ -115,11 +183,11 @@
             </div>
         </div>
         <br>
-        
+
         <br>
         <div class="planomain">
             <!--Primeiro Card-->
-        <div class="cardplan1">
+        <div class="cardplan">
             <p id="texto">
                 <center><span class="branco3">Plano </span>
                 <span class="verde3">ON-LINE</span></center>
@@ -155,7 +223,7 @@
         </div>
 
         <!-- Segundo Card-->
-        <div class="cardplan2">
+        <div class="cardplan">
             <p id="texto">
                 <center><span class="branco3">Plano </span>
                 <span class="verde3">ON-LINE</span></center>
@@ -191,7 +259,7 @@
         </div>
 
         <!-- Terceiro Card-->
-        <div class="cardplan3">
+        <div class="cardplan">
             <p id="texto">
                 <center><span class="branco3">Plano </span>
                 <span class="verde3">POWER</span></center>
@@ -227,7 +295,7 @@
         </div>
 
         <!-- Quarto Card-->
-        <div class="cardplan4">
+        <div class="cardplan">
             <p id="texto">
                 <center><span class="branco3">Plano </span>
                 <span class="verde3">BLACK</span></center>
@@ -266,7 +334,7 @@
         </div>
 
     </section>
-    <br>
+
     <section id="IMC">
    
         <div class="tituloIMC">
@@ -308,7 +376,96 @@
         </div>
     </div>
     </section>
+    <hr width="90%" color="#4cf850" size="1px" id="linha"/>
+    <section id="contato">
 
+        <div class="tudo-contato">
+            <h1 style="color: #4cf850; padding-left: 50px; font-size: 30px;">Contate-nos</h1>
+          
+            <div class="text-contact">
+                <p>Alguma pergunta ou observação? Basta nos 
+                    escrever uma mensagem!
+                </p>
+            </div>
+          
+          
+            <form name="meu_form">
+            <p for="email">E-mail:</p>
+            
+            <input type="email" id="emailid" placeholder="Digite seu E-mail" name="email" />
+          
+            <p for="coment">Comentário:</p>
+            
+            <input type="comentario" id="comentid" placeholder="Digite seu comentário" name="email" />
+            <br>
+            <br>
+          
+            <section class="button-enviar">
+            <button class="enviar" id="envio" >Enviar</button>
+          </section>
+          
+          </form>
+          
+           <div class="icons-contact">
+                  <img src="img/localizacao-conta .png">
+                  <br>
+                  <img src="img/chamada-telefonica-conta.png">
+                  <br>
+                  <img src="img/o-e-mail-conta .png">
+            </div>
+          
+        </div>
+
+        <div class="insta">
+            <!--ALEATORIO-->
+            <div class="aleatoria-verde">
+            </div>
+            
+            
+            <div class="text-insta">
+                <p>INSTAGRAM</p>
+            </div>
+
+            <br><br>
+            
+        
+
+        <!--SLIDE-->
+    <div class="todo-slider">
+        <div class="wrapper">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="card">
+              <div class="img"><img src="img/1 man.jpg" alt="img" draggable="false"></div>
+            </li>
+            <li class="card">
+              <div class="img"><img src="img/1 woman.jpg" alt="img" draggable="false"></div>
+              
+            </li>
+            <li class="card">
+              <div class="img"><img src="img/2 man.jpg" alt="img" draggable="false"></div>
+              
+            </li>
+            <li class="card">
+              <div class="img"><img src="img/2 woman.jpg" alt="img" draggable="false"></div>
+             
+            </li>
+            <li class="card">
+              <div class="img"><img src="img/3 man.jpg" alt="img" draggable="false"></div>
+              
+            </li>
+            <li class="card">
+              <div class="img"><img src="img/3 woman.jpg" alt="img" draggable="false"></div>
+              
+            </li>
+          </ul>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </div>
+</div>
+
+    </section>
+    <br><br>
     <section id="Footer">
         <footer id="rodape">
 

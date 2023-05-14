@@ -28,7 +28,7 @@ function calcIMC(){
         }
     }
     resultado.textContent =`${mensagem}`;
-    swal(`Seu IMC é: ${imc}`)
+    swal(`${imc}`,'Valor do IMC','success');
 
     }
     else{
@@ -43,13 +43,29 @@ function cadas(){
     let nome = document.getElementById("nome").value;
     let email = document.getElementById("email").value ;
     let senha = document.getElementById("senha").value ;
+    let senha2 = document.getElementById("senha2").value;
 
-    if(nome !=="" && email !=="" && senha !==""){
-       if(senha.length !== 5){
+    function reset(){
+        document.getElementById("cadastro").reset();
+    }
+
+    if(nome !=="" && email !=="" && senha !=="" && senha2 !==""){
+
+        if(nome.length < 5){
+            swal('Atenção','Nome inválido','error');
+        }
+        else if(email.length < 5){
+            swal('Atenção','Email inválido','error');
+        }
+       else if(senha.length !== 5){
             swal('Atenção','Senha deve conter 5 caracteres','error');
         }
+        else if(senha !== senha2){
+            swal('Atenção','As senhas não correspondem','error');
+        }
         else{
-            window.location.replace("Index.html");
+            swal('Cadastrado',`Usuário ${nome} cadastrado com sucesso`,'success');
+            reset();
         }
     }
     else{
@@ -57,3 +73,27 @@ function cadas(){
     }
 }
 
+function login(){
+    let nomel = document.getElementById("nomel").value;
+    let senhal = document.getElementById("senhal").value;
+
+    function logar(){
+        window.location.href = "Index.html";
+    }
+
+    if(nomel !=="" && senhal !==""){
+        if(nomel.length < 5){
+            swal('Atenção','Nome inválido','error');
+        }
+        else if(senhal.length !== 5){
+            swal('Atenção','Senha deve conter 5 caracteres','error');
+        }
+        else{
+            logar();
+        }
+
+    }
+    else{
+        swal('Atenção','Preencha todos os campos','error');
+    }
+}
