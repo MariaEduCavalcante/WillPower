@@ -1,3 +1,4 @@
+/* Geral */
 *{
     padding:0;
     margin:0;
@@ -11,17 +12,17 @@ body{
 /*Estilizando o Scrollbar*/
 body::-webkit-scrollbar {
     width: 13px;               /* scrollbar */
-  }
+}
   
-  body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     background: #111;        /* coor da area interna */
-  }
+}
   
-  body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: #3e3e3e;   /* cor da barra*/
     border-radius: 10px;       
     border: 2px solid #4cf850;  /* cor da borda e a grossura */
-  } 
+} 
 
   /** HOME **/
 
@@ -225,54 +226,53 @@ input[type="submit"]:hover{
 }
 
 /*Criando o outro menu*/
-
 .teste{
     width: auto;
     height:auto ;
     background: aqua;
-  }
+}
   
-  #menu {
+#menu {
     z-index: 2;
     margin-top: 34px;
     margin-left: 30px;
-  }
+}
   
   
-  /*Estilizando o segundo menu*/
-  #menu-bar {
+/*Estilizando o segundo menu*/
+#menu-bar {
     width: 45px;
     height: 40px;
     margin: 30px 0 20px 20px;
     cursor: pointer;
     z-index: 3;
-  }
+}
   
-  .bar {
+.bar {
     height: 5px;
     width: 70%;
     background-color: #4cf850;
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
-  }
+}
   
-  #bar1 {
+#bar1 {
     transform: translateY(-4px);
-  }
+}
   
-  #bar3 {
+#bar3 {
     transform: translateY(4px);
-  }
+}
   
-  .nav {
+.nav {
     transition: 0.3s ease;
     display: none;
-  }
+}
   
-  .nav ul {
+.nav ul {
     padding: 0 22px;
-  }
+}
   
   .nav li {
     list-style: none;
@@ -399,8 +399,10 @@ input[type="submit"]:hover{
 	left: -400%;
 	}	
 }
+
 /* SOBRE */
 
+/* slide */
 .slider-main-container{
     height: 70vh;
     display: flex;
@@ -436,16 +438,9 @@ input[type="submit"]:hover{
     animation: img-animation 2s ease;
 }
 
-    #slide-ao-todo{
-        margin-top: 10px;
-    }
-
-
-
-
-
-
-
+#slide-ao-todo{
+    margin-top: 10px;
+}
 
    /*barra*/
 
@@ -524,8 +519,6 @@ input[type="submit"]:hover{
         font-family: FontAwesome;
         content: '\f00c';
     }
-
-
     
     .icon {
         width: 60px;
@@ -579,6 +572,7 @@ input[type="submit"]:hover{
     width: 100%;
 }
 
+/* título */
 #missao h2{
     color:#fff;
     font-weight: bolder;
@@ -587,14 +581,7 @@ input[type="submit"]:hover{
     margin-top: -5%;
 }
 
-#pmissao{
-    width: 40%;
-    margin-left: 7%;
-    justify-content: left;
-    color:#fff;
-    font-size: 20px;
-}
-
+/* título */
 #titmissao{
     color:#4cf850;
     font-weight: 600px;
@@ -611,6 +598,16 @@ input[type="submit"]:hover{
     -webkit-box-shadow: 5px 5px 37px 17px #000000a6; 
     box-shadow: 5px 5px 37px 17px #000000a6;
 }
+
+/* parágrafo */
+#pmissao{
+    width: 40%;
+    margin-left: 7%;
+    justify-content: left;
+    color:#fff;
+    font-size: 20px;
+}
+
 
 /* Feed Back */
 .feed{
