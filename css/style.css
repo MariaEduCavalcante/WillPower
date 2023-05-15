@@ -399,10 +399,175 @@ input[type="submit"]:hover{
 	left: -400%;
 	}	
 }
+/* SOBRE */
+
+.slider-main-container{
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    }
+
+.slider-inner-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    display: none;
+    margin-top: -2px;
+}
+
+.slide.active{
+    display: flex;
+}
+.image-container{
+    width: 100%;
+    height: 100%;
+   text-align: center;
+}
+
+.image-container img{
+    width: 900px;
+    height: 460px;
+    animation: img-animation 2s ease;
+}
+
+    #slide-ao-todo{
+        margin-top: 10px;
+    }
+
+
+
+
+
+
+
+
+   /*barra*/
+
+    #progressbar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        color: #455a64;
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    
+    #progressbar li {
+        list-style-type: none;
+        font-size: 13px;
+        width: 25%;
+        float: left;
+        position: relative;
+        font-weight: 400;
+    }
+    
+    #progressbar .step0::before {
+        font-family: FontAwesome;
+        content: '\f10c';
+        color: #fff;
+    }
+    
+    #progressbar li::before {
+        width: 40px;
+        height: 40px;
+        line-height: 45px;
+        display: block;
+        font-size: 20px;
+        background: #c5cae9;
+        border-radius: 50%;
+        margin: auto;
+        padding: 0;
+    }
+    
+    #progressbar li::after {
+        content: '';
+        width: 100%;
+        height: 12px;
+        background-color: #c5cae9;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        z-index: -1;
+    }
+    
+    #progressbar li:last-child::after {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        left: -50%;
+    }
+    
+    #progressbar li:nth-child(2)::after,
+    #progressbar li:nth-child(3)::after {
+        left: -50%;
+    }
+    
+    #progressbar li:first-child::after {
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        left: 50%;
+    }
+    
+    
+    #progressbar li.active::before,
+    #progressbar li.active::after {
+        background-color: #4cf850;
+    }
+    
+    #progressbar li.active::before {
+        font-family: FontAwesome;
+        content: '\f00c';
+    }
+
+
+    
+    .icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+    }
+    
+    .icon-content {
+        padding-bottom: 20px;
+    }
+    
+    @media screen and (max-width: 992px) {
+        .icon-content {
+            width: 50%;
+        }
+    }
+    
+
+
+    .nav-data{
+        display: flex;
+        align-items: center ;
+    }
+
+    .nav-data ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .datas{
+        margin: 0 110px;
+        color: #FFF;
+        margin-left: 135px;
+        margin-top: -30px;
+    }
+    
 
 /* MISSÃO */
 #missao{
     width: 100%;
+    margin-top: 80px;
 }
 .cabemissao{
     width: 100%;
